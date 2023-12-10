@@ -1,0 +1,103 @@
+
+
+.card-container{
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+    padding: 0 20px;
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+  }
+
+  
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: 1px solid #ccc;
+    
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card img{
+   
+    object-fit: cover;
+    border-radius:5px 5px 0px 0px;
+    height: 300px;
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 15px;
+
+}
+.feature{
+    display: flex;
+}
+
+.rent span{
+    font-size: 13px;
+    color: black;
+
+}
+.rent{
+    color: blue;
+    display: flex;
+    align-items: center;
+}
+
+.location{
+    color: gray;
+    font-weight:5;
+}
+.feature{
+    display: flex;
+    border-top: 2px solid gray;
+    padding: 5px 0;
+    justify-content: space-between;
+    
+}
+
+.bed{
+    display: flex;
+    gap:10px;
+    align-items: center;
+}
+
+.bed span{
+    font-size: 12px;
+}
+
+.bathroom{
+    display: flex;
+    gap:10px;
+    align-items: center;
+}
+
+.bathroom span{
+    font-size: 12px;
+}
+
+.area{
+    display: flex;
+    gap:10px;
+    align-items: center;
+}
+
+.area span{
+    font-size: 12px;
+}
+
+
+
+
+
+

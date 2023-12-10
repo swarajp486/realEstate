@@ -1,0 +1,29 @@
+.signup-form,
+.signup-card{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    padding: 20px;
+}
+
+.signup-type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+
+.signup-form input{
+   
+	border: none;
+	outline: none;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 40px;
+	border-radius: .2em .2em 0 0;
+	padding: .4em;
+	
+}
+
+.signup-form input:hover{
+    border-bottom: .2em solid #E91E63;
+}

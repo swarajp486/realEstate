@@ -1,0 +1,125 @@
+.navbar{
+    
+    width: 100%;
+    margin:auto;
+    padding: 0 20px;
+    display: flex;
+    background-color: rgb(209, 209, 227);
+   
+}
+
+.left{
+    width: 50%;
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+}
+
+.right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 15px 40px;
+    gap: 20px;
+}
+
+
+
+.nav-links{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin-left: 20px;
+    
+}
+
+.home,
+.login,
+.logout,
+.signup{
+    text-decoration: none;
+    
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+
+}
+
+.logout,
+.login,
+.signup{
+    border: 1px solid yellow;
+    border-radius: 5px;
+    width: 80px;
+    
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+
+@media screen and (max-width:780px) {
+   
+    
+
+    .nav-links{
+        display: none;
+    }
+
+    .nav-links-mobile{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        list-style: none;
+        background-color: rgb(209, 209, 227);
+        left: 0;
+        top:75px;
+        transition: all 0.5s ease-out;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .home,
+    .logout,
+    .login,
+    .signup{
+        color: white;
+        text-align: center;
+        padding: 32px;
+        width: 100%;
+        transition: all 0.5s ease;
+
+    }
+
+    .logout,
+    .login,
+    .signup{
+        border: none;
+    }
+
+    .mobile-menu-icon{
+        display: block;
+        position: absolute;
+        font-size: 30px;
+        outline: none;
+        background: transparent;
+        border: none;
+        top:15px;
+        right: 25px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
