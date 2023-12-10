@@ -6,6 +6,7 @@ import { IoMenu } from "react-icons/io5";
 import { MdOutlineCurrencyRupee } from "react-icons/md";
 import axios from 'axios';
 import { FilterContext } from '../../contextapi';
+const baseUrl="https://realestate-hd4t.onrender.com"
 
 function Card() {
   const {selectedCity,selectedDate,selectedPrice,propertyType,apply,setApply}=useContext(FilterContext)
@@ -31,7 +32,7 @@ function Card() {
   
   
   async function fetchProperties() {
-    const response = await axios.get('/api/list-properties');
+    const response = await axios.get(`${baseUrl}/api/list-properties`);
     setItem(response.data);
     setFilteredItems(response.data)
     console.log(item)

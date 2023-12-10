@@ -2,7 +2,7 @@ import React,{useEffect, useState} from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 import "./Signup.css"
-
+const baseUrl="https://realestate-hd4t.onrender.com"
 function Signup() {
     const [formData,setFormData]=useState({})
     const [post,setPost]=useState([])
@@ -25,7 +25,7 @@ function Signup() {
           alert('Invalid Admin')
         }else{
           try {
-            const response= await axios.post('/api/signup', {firstName:formData.firstName,lastName:formData.lastName, email:formData.email, password:formData.password,userType:formData.userType })
+            const response= await axios.post(`${baseUrl}/api/signup`, {firstName:formData.firstName,lastName:formData.lastName, email:formData.email, password:formData.password,userType:formData.userType })
             setPost(response)
            
             alert(response.data)

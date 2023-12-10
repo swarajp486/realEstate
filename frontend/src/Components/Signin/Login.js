@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./Login.css"
 import { AuthContext } from '../../contextapi';
+const baseUrl="https://realestate-hd4t.onrender.com"
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -11,7 +12,7 @@ function Login() {
     e.preventDefault();
 
     try {
-      const response = await axios.post('/api/login', { email, password });
+      const response = await axios.post(`${baseUrl}/api/login`, { email, password });
       // Store token in local storage or other secure storage
       updateToken(response.data.token);
       
