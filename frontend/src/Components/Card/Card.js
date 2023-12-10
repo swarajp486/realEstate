@@ -31,7 +31,7 @@ function Card() {
   
   
   async function fetchProperties() {
-    const response = await axios.get('http://localhost:5000/api/list-properties');
+    const response = await axios.get('/api/list-properties');
     setItem(response.data);
     setFilteredItems(response.data)
     console.log(item)

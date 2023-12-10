@@ -25,7 +25,7 @@ function Signup() {
           alert('Invalid Admin')
         }else{
           try {
-            const response= await axios.post('http://localhost:5000/api/signup', {firstName:formData.firstName,lastName:formData.lastName, email:formData.email, password:formData.password,userType:formData.userType })
+            const response= await axios.post('/api/signup', {firstName:formData.firstName,lastName:formData.lastName, email:formData.email, password:formData.password,userType:formData.userType })
             setPost(response)
            
             alert(response.data)
