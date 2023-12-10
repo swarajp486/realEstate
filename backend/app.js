@@ -10,7 +10,7 @@ const bcrypt=require('bcryptjs')
 const jwt=require('jsonwebtoken')
 const JWT_SECRET="sakdffjewofjwe"
 const { Property, User } = require('./property'); 
-const Port=5000
+const Port=process.env.PORT || 5000
 const MONGODB="mongodb+srv://swarajp486:Lecun@cluster0.c4lhbbx.mongodb.net/"
 mongoose
   .connect(MONGODB, {
